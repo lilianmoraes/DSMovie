@@ -4,6 +4,10 @@
     --text-gray: #4a4a4a;
     --color-primary: #4D41C0;
     --white: #fff
+    --text-linght-gray: #aaa
+    --star-yellow: #FFBB3A;
+    ;
+
     
 }
 * {
@@ -23,7 +27,7 @@ html, body {
 
 header {
     background-color: var(--color-primary);
-    color: var(--white);
+    color:honeydew;
     height: 60px;
     display: flex;
     align-items: center;
@@ -74,14 +78,14 @@ a, a:hover {
 }
 
 .dsmovie-card-description{
-    background-color: var(--white);
+    background-color:honeydew;
     padding: 10px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 
 .dsmovie-card-description h3 {
@@ -90,11 +94,36 @@ a, a:hover {
     margin-bottom: 25px;
 }
 
+.dsmovie-card-description-bottom{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmovie-card-description-bottom h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color:goldenrod
+
+}
+
+.dsmovie-card-description-bottom img {
+      width: 22px;
+}
+
+.dsmovie-card-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color:gray
+    margim-bottom: 10px;
+
+}
+
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
-    color: var(--white);
+    color:honeydew;
     font-size: 14px;
     font-weight: 700;
     display: flex;
@@ -114,7 +143,7 @@ a, a:hover {
 }
 
 .dsmovie-form-description {
-      background-color: var(--white); 
+      background-color:honeydew; 
       padding: 20px; 
       display: flex;
       flex-direction: column;
