@@ -11,16 +11,15 @@
     
 }
 * {
-    margin: 0;
     box-sizing: border-box;
     font-family:'Open Sans', sans-serif ;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
     margin: 0;
-}
 
+} 
 html, body {
      background-color: var(--bg-gray);
 }
@@ -64,7 +63,7 @@ a, a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0px 10px;
 }
 
 .dsmovie-card {
@@ -79,19 +78,18 @@ a, a:hover {
 
 .dsmovie-card-description{
     background-color:honeydew;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 0 20px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border-radius: 0 0 10px 10px;
-    height: 220px;
+    height: 190px;
 }
 
 .dsmovie-card-description h3 {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .dsmovie-card-description-bottom{
@@ -111,10 +109,11 @@ a, a:hover {
       width: 22px;
 }
 
+
 .dsmovie-card-description-bottom p {
     font-size: 12px;
     font-weight: 400;
-    color:gray
+    color: var(--text-light-gray);
     margin-bottom: 10px;
 
 }
@@ -138,7 +137,7 @@ a, a:hover {
 
 .dsmovie-form-container{
     padding: 40px 0;
-    max-width: 480px;
+    max-width: 615px;
 
 }
 
@@ -169,10 +168,8 @@ margin-bottom: 20px ;
 
 .dsmovie-form-group label {
     font-size: 12px;
-    
-
-}
-
+    color: var(--text-light-gray)
+}       
 .dsmovie-form-btn-container{
     height: 100px;
     display: flex;
@@ -180,4 +177,63 @@ margin-bottom: 20px ;
     align-items: center;
     justify-content: space-between;
 }
-     
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+
+}
+ 
+.dsmovie-pagination-box { 
+    width: 180px;
+    display: flex 180px ;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+
+}
+
+.dsmovie-pagination-box button {
+   width: 40px;
+   height: 40px;
+   border: 1px solid var(--color-primary);
+   border-radius: 4px;
+   background-color: var(--white);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.dsmovie-pagination-box button img {
+filter: brightness(0) saturate(100%) invert(52%) sepia(66%) saturate(3124%) hue-rotate(160deg) brightness(93%) contrast(101%);
+}
+
+
+
+
+.dsmovie-pagination-box button:disabled {
+   border: 1px solid var(--text-light-gray);
+
+}
+
+.dsmovie-pagination-box button:disabled img {
+filter: unset;
+
+}
+
+
+
+.dsmovie-flip-horizontal {
+   transform: rotate(180deg);
+
+
+}
